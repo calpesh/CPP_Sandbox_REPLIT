@@ -16,13 +16,12 @@ int main() {
   std::cout << *p << "\n";//val at address stored in p
   std::cout << a << " " << &a << "\n";//val of a, address of a
   */
-
-  int a = 5;
-  int *p;
-  p = &a;
-  for(int i=0; i <= 5; i = i+1) {
-    p = p+1;
-    std::cout << p << "\n";
-  }
-    return 0;
+  char a = 'x';
+  char *p1 = 0;
+  p1 = &a;
+  std::cout<<(void*)p1<<"\n";
+  int b = 5;
+  int *p2 = 0;
+  p2 = &b;
+  std::cout<<p2<<"\n"; 
 }
