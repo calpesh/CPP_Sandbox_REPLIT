@@ -19,7 +19,6 @@ int main() {
   char a = 'x';
   char *p1 = 0;
   p1 = &a;
-  *p1 = 'y';
   std::cout<<&p1<<" "<<a<<": "<<(void*)p1<<"\n";
   int b = 5;
   int *p2 = 0;
