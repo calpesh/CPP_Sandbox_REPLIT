@@ -19,9 +19,10 @@ int main() {
   char a = 'x';
   char *p1 = 0;
   p1 = &a;
-  std::cout<<(void*)p1<<"\n";
+  *p1 = 'y';
+  std::cout<<&p1<<" "<<a<<": "<<(void*)p1<<"\n";
   int b = 5;
   int *p2 = 0;
   p2 = &b;
-  std::cout<<p2<<"\n"; 
+  std::cout<<&p2<<" "<<&b<<" "<<(void*)p2<<"\n";
 }
