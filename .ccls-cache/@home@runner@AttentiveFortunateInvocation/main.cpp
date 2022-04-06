@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+  /*
   int a = 5;
   int *p;
   p = &a;
@@ -14,4 +15,14 @@ int main() {
   std::cout << p << " " << &p << "\n";//val of p(address of a),address of p
   std::cout << *p << "\n";//val at address stored in p
   std::cout << a << " " << &a << "\n";//val of a, address of a
+  */
+
+  int a = 5;
+  int *p;
+  p = &a;
+  for(int i=0; i <= 5; i = i+1) {
+    p = p+1;
+    std::cout << p << "\n";
+  }
+    return 0;
 }
